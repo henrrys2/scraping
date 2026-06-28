@@ -1,0 +1,10 @@
+HTTP/2 200 
+content-type: text/html;charset=UTF-8
+date: Wed, 24 Jun 2026 17:16:18 GMT
+x-robots-tag: noindex, nofollow, noarchive, nosnippet
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-store, no-cache, must-revalidate, max-age=0
+pragma: no-cache
+set-cookie: JSESSIONID=WaTvbV2FMQaBM5x-sp4jeQ-O.jvmr-scjurisp4; Path=/jurisprudenciaweb;Secure; HttpOnly
+
