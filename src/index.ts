@@ -1,8 +1,20 @@
-// src/index.ts (añadir al final)
-import { JurisprudenciaScraper } from './scraper';
+/**
+ * index.ts
+ * ─────────────────────────────────────────────────────────────────────────────
+ * Punto de entrada del scraper.
+ * Ejecutar con:  npx ts-node index.ts
+ * ─────────────────────────────────────────────────────────────────────────────
+ */
 
-// ... (tu código anterior de creación de carpetas)
+import { JurisprudenciaScraper } from './JurisprudenciaScraper';
 
-console.log('[INFO] Directorios listos. Iniciando Scraper...');
-const scraper = new JurisprudenciaScraper();
-scraper.iniciar();
+(async () => {
+  const scraper = new JurisprudenciaScraper();
+  await scraper.iniciar();
+
+  // Una vez terminada la navegación, los documentos están disponibles
+  const documentos = scraper.getDocumentos();
+  console.log('\n[RESULTADO] Documentos recolectados:', documentos.length);
+
+  // Fase siguiente: descargar archivos (se implementará en la siguiente iteración)
+})();
